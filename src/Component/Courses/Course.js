@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import fakeData from '../../fakeData/courses';
-import courses from '../../fakeData/courses';
 import './Course.css';
 import SingleCourse from '../SingleCourse/SingleCourse';
 import Cart from '../Cart/Cart';
@@ -39,7 +38,7 @@ const Course = () => {
                 <h4>Course fees: tk. {formatNumber(totalPrice)}</h4>
                 <h5>Tax + VAT: tk. {formatNumber(taxAmount)}</h5>
                 <h4>Total fees: tk. {formatNumber(totalPrice + taxAmount)}</h4>
-                <button className="btn btn-success">Check out</button>
+                <button className="btn btn-success btn-block">Check out</button>
                 {/* <Cart name={cart}></Cart> */}
             </div>
         </div>
