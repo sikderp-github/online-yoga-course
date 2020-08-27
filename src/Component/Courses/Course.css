@@ -1,0 +1,9 @@
+.course-container{
+display:flex;
+margin-right: 10px;
+}
+.course-title{
+    margin-right: 5px;
+    border-right: 1px solid gray;
+    padding-right: 10px;
+}

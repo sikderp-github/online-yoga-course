@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
 import Course from './Component/Courses/Course';
+import courses from './fakeData/courses';
+import Cart from './Component/Cart/Cart';
 
 function App() {
-  const [courses, setCourses] = useState([]);
+
   return (
-    <div className="App container-fluid px-2">
-      <h1 className="text-center py-4">Welcome to Online Yoga Courses</h1>
-      <div className="courseItem">
-        <Course ></Course>
+    <div className="App container-fluid">
+      <div className="courseHead">
+        <h1 className="text-center p-4 m-4 font-weight-bolder">Welcome to Online Yoga Courses</h1>
       </div>
-      <div className="cart">
-        <h3>Courses Summary:</h3>
-        <h5>No. of Courses taken</h5>
-        <h4>Total Course fees:</h4>
-
-      </div>
-
+      <Course></Course>
     </div>
   );
 }
